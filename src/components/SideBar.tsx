@@ -1,7 +1,7 @@
-import { Button } from "./Button";
-
-import '../styles/sidebar.scss';
 import { useEffect, useState } from "react";
+
+import { Button } from "./Button";
+import '../styles/sidebar.scss';
 
 import { api } from '../services/api';
 interface SidebarProps{
@@ -27,9 +27,7 @@ export function SideBar({selectedGenreId, setSelectedGenreId}:SidebarProps) {
   function handleClickButton(id: number) {
     setSelectedGenreId(id);
   }
-
   return (
-      <>
         <nav className="sidebar">
         <span>Watch<p>Me</p></span>
 
@@ -46,8 +44,6 @@ export function SideBar({selectedGenreId, setSelectedGenreId}:SidebarProps) {
         </div>
 
       </nav>
-      </>
-
     );
   
 }
